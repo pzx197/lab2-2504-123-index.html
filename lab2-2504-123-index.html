@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>图书商城</title>
+    <link rel="stylesheet" href="css/lab2-2504-123-index.css">
+</head>
+<body>
+    <!-- 固定定位导航 -->
+    <nav class="nav">
+        <a href="#">首页</a>
+        <a href="#">分类</a>
+        <a href="#">推荐</a>
+        <a href="#">新书</a>
+    </nav>
+
+    <!-- 头部Logo -->
+    <header class="header">
+        <div class="logo">图书商城</div>
+    </header>
+
+    <!-- 三栏浮动布局 -->
+    <div class="container clearfix">
+        <!-- 左栏：相对定位 -->
+        <div class="left">
+            <h4>图书分类</h4>
+            <p>编程</p><p>文学</p><p>历史</p>
+        </div>
+
+        <!-- 中栏：两本图书+相同悬停效果 -->
+        <div class="mid">
+            <div class="book-box clearfix">
+                <!-- 第一本书 -->
+                <div class="book">
+                    <span class="tag">热销</span>
+                    <img src="img/1.jpg" alt="html图书">
+                    <p>HTML入门到精通</p>
+                    <div class="tips">$9999</div>
+                </div>
+                <!-- 第二本书（效果完全一致） -->
+                <div class="book">
+                    <span class="tag">新品</span>
+                    <img src="img/2.jpg" alt="CSS图书">
+                    <p>CSS实战教程</p>
+                    <div class="tips">$78962</div>
+                </div>
+            </div>
+
+            <!-- 浮动热门推荐 -->
+            <div class="hot">推荐1</div>
+            <div class="hot">推荐2</div>
+
+            <!-- 表格新书 -->
+            <table>
+                <tr><th>书名</th><th>价格</th></tr>
+                <tr><td>前端实战</td><td>¥59</td></tr>
+            </table>
+        </div>
+
+        <!-- 右栏：固定定位 -->
+        <div class="right">
+            <h4>促销广告</h4>
+            <p>满100减20</p>
+        </div>
+    </div>
+</body>
+</html>
